@@ -29,20 +29,41 @@
 		61E7F2F92CC23E5600867E65 /* MultiplicityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiplicityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		61E7F3142CC23E9A00867E65 /* Exceptions for "MultiplicityTests" folder in "MultiplicityTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				MultiplicityTests.swift,
+			);
+			target = 61E7F2EE2CC23E5600867E65 /* MultiplicityTests */;
+		};
+		61E7F3152CC23E9A00867E65 /* Exceptions for "MultiplicityTests" folder in "MultiplicityUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				MultiplicityTests.swift,
+			);
+			target = 61E7F2F82CC23E5600867E65 /* MultiplicityUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		61E7F2E12CC23E5400867E65 /* Multiplicity */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Multiplicity;
 			sourceTree = "<group>";
 		};
-		61E7F2F22CC23E5600867E65 /* MultiplicityTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MultiplicityTests;
-			sourceTree = "<group>";
-		};
 		61E7F2FC2CC23E5600867E65 /* MultiplicityUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MultiplicityUITests;
+			sourceTree = "<group>";
+		};
+		61E7F3122CC23E9A00867E65 /* MultiplicityTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				61E7F3142CC23E9A00867E65 /* Exceptions for "MultiplicityTests" folder in "MultiplicityTests" target */,
+				61E7F3152CC23E9A00867E65 /* Exceptions for "MultiplicityTests" folder in "MultiplicityUITests" target */,
+			);
+			path = MultiplicityTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -76,8 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				61E7F2E12CC23E5400867E65 /* Multiplicity */,
-				61E7F2F22CC23E5600867E65 /* MultiplicityTests */,
 				61E7F2FC2CC23E5600867E65 /* MultiplicityUITests */,
+				61E7F3122CC23E9A00867E65 /* MultiplicityTests */,
 				61E7F2E02CC23E5400867E65 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +151,6 @@
 			dependencies = (
 				61E7F2F12CC23E5600867E65 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				61E7F2F22CC23E5600867E65 /* MultiplicityTests */,
-			);
 			name = MultiplicityTests;
 			packageProductDependencies = (
 			);
@@ -155,6 +173,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				61E7F2FC2CC23E5600867E65 /* MultiplicityUITests */,
+				61E7F3122CC23E9A00867E65 /* MultiplicityTests */,
 			);
 			name = MultiplicityUITests;
 			packageProductDependencies = (
